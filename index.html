@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title> YU-GI-OH </title>
+        <meta charset="utf-8">
+
+        <style>
+            body {background-image: url("imagens/tabuleiro.jpg"); height: 100%;}
+            h1 {color: rgb(0, 0, 0); background-color: blanchedalmond;}
+        </style>
+
+        <script>
+            function imagem0(){
+                document.getElementById("card0").src="imagens/carta.jpg"
+            }
+
+            function imagem1(){
+                document.getElementById("card1").src="imagens/carta_mage.jpg"
+            }
+
+            function imagem2(){
+                document.getElementById("card2").src="imagens/carta_val.jpg"
+            }
+        </script>       
+    </head>
+
+    <body>
+        <center>
+         <h1> Vire os cards clicando neles, espero que você ganhe cartas boas!</h1>
+
+         <img src="imagens/carta_fundo.png" id="card0" alt="carta virada" width="400" height="520" onclick="imagem0()">
+         <img src="imagens/carta_fundo.png" id="card1" alt="carta virada" width="400" height="520" onclick="imagem1()">
+         <img src="imagens/carta_fundo.png" id="card2" alt="carta virada" width="400" height="520" onclick="imagem2()">
+        </center>
+    </body>
+</html>
